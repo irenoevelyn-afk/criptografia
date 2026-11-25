@@ -1,0 +1,31 @@
+senha = "123456"
+senha_criptografada = ""
+
+for numero in senha:
+numero = numero + “1”
+print(numero)
+for numero in senha:
+    numero = int(numero) + 1
+    senha_criptografada = senha_criptografada + str(numero)
+print(senha_criptografada)
+
+alfabeto = "abcdefghijklmnopqrstuvwxyz"
+senha = "marcelo"
+
+alfabeto = "abcdefghijklmnopqrstuvwxyz"
+senha = "marcelo"
+senha_criptografada = ""
+
+for letra in alfabeto:
+    numero = ord(letra)
+    print(letra, numero)
+numero = ord(letra)  # 97 até 122
+dicionario = "qwertyuiopasdfghjklzxcvbnm"
+numero = ord(letra) - ord("a")  # 0 até 25
+posicao = ord(letra) - ord("a")
+for letra in alfabeto:
+    posicao = ord(letra) - ord("a")
+    senha_criptografada += dicionario[posicao]
+print(letra, posicao)
+print(senha_criptografada)
+for letra in senha:
